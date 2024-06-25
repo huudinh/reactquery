@@ -34,7 +34,7 @@ https://jsonplaceholder.typicode.com/posts
 
 ### Fetch dữ liệu với Axios thông thường
 
-Sửa file App.js
+Sửa file App.jsx
 
 ```
 import axios from 'axios';

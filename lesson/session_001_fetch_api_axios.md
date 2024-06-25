@@ -34,7 +34,7 @@ https://jsonplaceholder.typicode.com/posts
 
 ### Fetch dữ liệu với Axios thông thường
 
-Sửa file App.js
+Sửa file App.jsx
 
 ```
 import axios from 'axios';
@@ -65,3 +65,5 @@ function App() {
 
 export default App;
 ```
+
+* Bài tiếp theo [Fetch dữ liệu với React Query](lesson/session_002_fetch_api_reactquery.md)

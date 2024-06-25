@@ -1,5 +1,7 @@
-# reactquery
+## ReactJS - React Query
+
 ### Khởi tạo dự án
+
 Vào thư mục dự án gõ lệnh
 ```
 npm create vite@latest
@@ -66,4 +68,4 @@ function App() {
 export default App;
 ```
 
-* Bài tiếp theo [Fetch dữ liệu với React Query](lesson/session_002_fetch_api_reactquery.md)
+* Bài tiếp theo [Fetch dữ liệu với React Query](session_002_fetch_api_reactquery.md)

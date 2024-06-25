@@ -1,8 +1,8 @@
-# reactquery
+## ReactJS - React Query
 
 ### Fetch dữ liệu với React Query
 
-### Sửa file App.jsx
+#### Sửa file App.jsx
 
 ```
 import './App.css'
@@ -24,7 +24,7 @@ function App() {
 export default App;
 ```
 
-### Thêm mới file Post.jsx
+#### Thêm mới file Post.jsx
 
 ```
 import axios from 'axios';
@@ -69,4 +69,4 @@ retry: Giới hạn số lần load API nếu bị lỗi
 
 retryDelay: Giới hạn thời gian mỗi lần load lại API
 
-<!-- * Bài tiếp theo [Fetch dữ liệu với React Query](lesson/session_002_fetch_api_reactquery.md) -->
+<!-- * Bài tiếp theo [Fetch dữ liệu với React Query](session_002_fetch_api_reactquery.md) -->

@@ -1,5 +1,7 @@
-# reactquery
+# React Query
+
 ### Khởi tạo dự án
+
 Vào thư mục dự án gõ lệnh
 ```
 npm create vite@latest

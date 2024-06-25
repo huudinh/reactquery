@@ -1,8 +1,8 @@
-# reactquery
+## ReactJS - React Query
 
 ### Fetch dữ liệu với React Query
 
-### Sửa file App.jsx
+#### Sửa file App.jsx
 
 ```
 import './App.css'
@@ -24,7 +24,7 @@ function App() {
 export default App;
 ```
 
-### Thêm mới file Post.jsx
+#### Thêm mới file Post.jsx
 
 ```
 import axios from 'axios';

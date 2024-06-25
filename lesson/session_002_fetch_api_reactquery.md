@@ -68,3 +68,5 @@ export default Posts;
 retry: Giới hạn số lần load API nếu bị lỗi
 
 retryDelay: Giới hạn thời gian mỗi lần load lại API
+
+<!-- * Bài tiếp theo [Fetch dữ liệu với React Query](lesson/session_002_fetch_api_reactquery.md) -->

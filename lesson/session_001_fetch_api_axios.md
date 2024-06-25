@@ -65,3 +65,5 @@ function App() {
 
 export default App;
 ```
+
+* Bài tiếp theo [Fetch dữ liệu với React Query](lesson/session_002_fetch_api_reactquery.md)

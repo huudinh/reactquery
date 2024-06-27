@@ -3,13 +3,13 @@ import { useQuery } from '@tanstack/react-query';
 
 function Posts() {
   const fetchApi = async () => {
-    const response = await axios.get('https://jsonplaceholder.typicode.com/postss')
+    const response = await axios.get('https://jsonplaceholder.typicode.com/posts')
     return response.data
   }
 
   // Queries
   const query = useQuery({ queryKey: ['posts'], queryFn: fetchApi, retry: 5, retryDelay: 1000 });
-  
+
   console.log(query);
 
   const { isError, isLoading, data } = query;

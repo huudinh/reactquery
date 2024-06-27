@@ -14,6 +14,4 @@ React Query đánh dấu dữ liệu là “cũ” sau thời gian staleTime (m�
 npm install react-router-dom@6
 ```
 
-
-
-<!-- * Bài tiếp theo [Fetch dữ liệu với React Query](session_002_fetch_api_reactquery.md) -->
+* Bài tiếp theo [Cache trong React Query](session_003_cache_api.md)

@@ -1,4 +1,4 @@
-## ReactJS - React Query
+## React Query
 
 ### Khởi tạo dự án
 

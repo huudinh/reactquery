@@ -183,6 +183,6 @@ Khi ta click vào menu React api Loading sẽ bị gọi lại mỗi lần click
 
 Khi ta click vào menu React query Loading sẽ bị gọi chỉ 1 lần đầu mỗi lần click lại trang
 
-=> Khi sử dụng react query data chỉ lấy từ api lần đầu tiên, các lần tiếp theo data sẽ lấy từ cache ra.
+=> Khi sử dụng react query data chỉ lấy từ api lần đầu tiên, các lần tiếp theo data sẽ lấy từ cache ra
 
-* Bài tiếp theo [Cache trong React Query](session_003_cache_api.md)
+* Bài tiếp theo [Json-Server](session_004_jsonserver.md)

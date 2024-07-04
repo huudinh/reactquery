@@ -67,4 +67,4 @@ retry: Giới hạn số lần load API nếu bị lỗi
 
 retryDelay: Giới hạn thời gian mỗi lần load lại API
 
-* Bài tiếp theo [Cache trong React Query](session_003_cache_api.md)
+*Bài tiếp theo [Cache trong React Query](session_003_cache_api.md)

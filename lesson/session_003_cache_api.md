@@ -185,4 +185,4 @@ Khi ta click vào menu React query Loading sẽ bị gọi chỉ 1 lần đầu 
 
 => Khi sử dụng react query data chỉ lấy từ api lần đầu tiên, các lần tiếp theo data sẽ lấy từ cache ra
 
-* Bài tiếp theo [Json-Server](session_004_jsonserver.md)
+*Bài tiếp theo [Json-Server](session_004_jsonserver.md)

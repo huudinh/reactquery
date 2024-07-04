@@ -149,4 +149,4 @@ export default App;
 => Chạy ứng dụng, bây giờ ta thay đổi data trong file db.json, thì data trong trang json-server sẽ tự động được cập nhật
 
 
-*Bài tiếp theo [Dependent](session_005_dependent.md)
+*Bài tiếp theo [Dependent](session_005_dependent.md)*

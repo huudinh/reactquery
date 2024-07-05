@@ -11,3 +11,5 @@
 4. [Json-Server](lesson/session_004_jsonserver.md)
 
 5. [Dependent Queries trong React Query](lesson/session_005_dependent.md)
+
+6. [Paginated với KeepPreviousData](session_006_paginated.md)

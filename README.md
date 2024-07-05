@@ -10,4 +10,4 @@
 
 4. [Json-Server](lesson/session_004_jsonserver.md)
 
-5. [Dependent Queries trong React Query](session_005_dependent.md)
+5. [Dependent Queries trong React Query](lesson/session_005_dependent.md)

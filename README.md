@@ -9,3 +9,5 @@
 3. [Cache trong React Query](lesson/session_003_cache_api.md)
 
 4. [Json-Server](lesson/session_004_jsonserver.md)
+
+5. [Dependent Queries trong React Query](session_005_dependent.md)

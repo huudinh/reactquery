@@ -115,4 +115,4 @@ export default App;
 Click vào menu Dependent, khi bạn truyền vào các trang tương ứng trong ô input thì các dữ liệu tương ứng sẽ được load ra
 
 
-*Bài tiếp theo [Dependent](session_005_dependent.md)*
+*Bài tiếp theo [Paginated với KeepPreviousData](session_005_paginated.md)*

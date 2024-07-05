@@ -5,6 +5,7 @@ import Posts from './pages/Posts';
 import ReactPost from './pages/ReactPost';
 import './App.css'
 import JsonPosts from './pages/JsonPosts';
+import Dependent from './pages/Dependent';
 
 function App() {
   const client = new QueryClient();
@@ -15,6 +16,7 @@ function App() {
         <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/dependent" element={<Dependent />} />
           <Route path="/json-server" element={<JsonPosts />} />
           <Route path="/react-query" element={<Posts />} />
           <Route path="/react" element={<ReactPost />} />

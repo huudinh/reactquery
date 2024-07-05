@@ -12,4 +12,4 @@
 
 5. [Dependent Queries trong React Query](lesson/session_005_dependent.md)
 
-6. [Paginated với KeepPreviousData](session_006_paginated.md)
+6. [Paginated với KeepPreviousData](lesson/session_006_paginated.md)

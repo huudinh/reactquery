@@ -128,4 +128,4 @@ export default App;
 Click vào menu Page, khi bạn click vào nút Next hoặc Previos thì trang sẽ không bị loading lại bởi chúng ta đã thêm tham số `placeholderData: keepPreviousData`
 
 
-*Bài tiếp theo [useInfiniteQuery trong react query](session_007_loadmore.md)*
+*Bài tiếp theo [Loadmore trong react query](session_007_loadmore.md)*

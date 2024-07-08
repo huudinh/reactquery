@@ -14,4 +14,4 @@
 
 6. [Paginated với KeepPreviousData](lesson/session_006_paginated.md)
 
-7. [useInfiniteQuery trong react query](lesson/session_007_loadmore.md)
+7. [Loadmore trong React query](lesson/session_007_loadmore.md)

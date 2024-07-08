@@ -4,6 +4,7 @@ const Header = () => {
     return (
         <div style={{ display:"flex", gap:10}}>
             <Link to="/">Home</Link>
+            <Link to="/loadmore">Load More</Link>
             <Link to="/page">Page</Link>
             <Link to="/dependent">Dependent</Link>
             <Link to="/json-server">Json-server</Link>

@@ -1,4 +1,4 @@
-# useInfiniteQuery trong react query
+# Loadmore trong react query
 
 ### useInfiniteQuery là gì?
 

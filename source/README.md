@@ -1,8 +1,17 @@
-# React + Vite
+## ReactJS - React Query
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Mục lục
 
-Currently, two official plugins are available:
+1. [Fetch API với Axios](session_001_fetch_api_axios.md)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+2. [Fetch dữ liệu với React Query](session_002_fetch_api_reactquery.md)
+
+3. [Cache trong React Query](session_003_cache_api.md)
+
+4. [Json-Server](session_004_jsonserver.md)
+
+5. [Dependent Queries trong React Query](session_005_dependent.md)
+
+6. [Paginated với KeepPreviousData](session_006_paginated.md)
+
+7. [Loadmore trong React query](session_007_loadmore.md)

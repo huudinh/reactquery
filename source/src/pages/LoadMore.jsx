@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { useQuery, keepPreviousData, useInfiniteQuery } from '@tanstack/react-query';
+import { useInfiniteQuery } from '@tanstack/react-query';
 import Header from '../components/Header';
 import { useState } from 'react';
 

@@ -113,7 +113,7 @@ function JsonPosts() {
             style={{ cursor: 'pointer', color:'blue' }}
             onClick={() => handleUpdatePost(post.id)}
           >
-            [Sửa]
+            [Edit]
           </span>
           &nbsp;
           <span 

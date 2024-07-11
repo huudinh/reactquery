@@ -1,4 +1,4 @@
-# CRUD API trong react query
+# CRUD API trong React query
 
 ### Đọc API
 
@@ -217,4 +217,4 @@ Click vào nút Delete để xóa bài viết
 
 Click vào nút Edit, Nhập nội dung cần sửa
 
-<!-- *Bài tiếp theo [CRUD API trong react query](session_008_crud.md)* -->
+*Bài tiếp theo [useMutation trong React Query](session_009_mutation.md)*

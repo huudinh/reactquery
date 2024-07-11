@@ -14,6 +14,8 @@
 
 6. [Paginated với KeepPreviousData](lesson/session_006_paginated.md)
 
-7. [Loadmore trong react query](lesson/session_007_loadmore.md)
+7. [Loadmore trong React Query](lesson/session_007_loadmore.md)
 
-8. [CRUD API trong react query](lesson/session_008_crud.md)
+8. [CRUD API trong React Query](lesson/session_008_crud.md)
+
+9. [Mutation trong React Query](lesson/session_009_mutation.md)

@@ -143,4 +143,4 @@ export default App;
 Click vào menu Loadmore, khi bạn click vào nút Loadmore thì trang sẽ hiển thị các trang tiếp theo
 
 
-*Bài tiếp theo [CRUD API trong react query](session_008_crud.md)*
+*Bài tiếp theo [CRUD API trong React Query](session_008_crud.md)*

@@ -2,13 +2,13 @@
   "posts": [
     {
       "id": "3c6b",
-      "title": "Cho",
-      "author": null
+      "title": "Mingo",
+      "author": ""
     },
     {
       "id": "427b",
-      "title": "json-server",
-      "author": "typicode"
+      "title": "Picaso",
+      "author": "vn"
     },
     {
       "id": "f434",
@@ -31,42 +31,17 @@
       "author": "Hà Nội"
     },
     {
-      "id": "2f89",
+      "id": "c920",
+      "title": "Jack",
+      "author": "usa"
+    },
+    {
+      "id": "2a4c",
       "title": "json-server",
       "author": "typicode"
     },
     {
-      "id": "4f59",
-      "title": "json-server",
-      "author": "typicode"
-    },
-    {
-      "id": "8f96",
-      "title": "Dog",
-      "author": "Viet nam"
-    },
-    {
-      "id": "f7cf",
-      "title": "json-server",
-      "author": "typicode"
-    },
-    {
-      "id": "e377",
-      "title": "Cat",
-      "author": "vn"
-    },
-    {
-      "id": "daa0",
-      "title": "Pet",
-      "author": ""
-    },
-    {
-      "id": "97a9",
-      "title": "json-server",
-      "author": "typicode"
-    },
-    {
-      "id": "ca78",
+      "id": "5d70",
       "title": "json-server",
       "author": "typicode"
     }

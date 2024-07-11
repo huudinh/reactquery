@@ -1,15 +1,8 @@
 import axios from 'axios';
-import { useQuery } from '@tanstack/react-query';
+import { useMutation, useQuery } from '@tanstack/react-query';
 import Header from '../components/Header';
-import { useEffect, useState } from 'react';
 
 function JsonPosts() {
-  // Lưu trữ trang thái Create, Delete, postId
-  const [isCreate, setIsCreate] = useState(false);
-  const [isDelete, setIsDelete] = useState(false);
-  const [postId, setPostId] = useState();
-  const [isUpdate, setIsUpdate] = useState(false);
-  const [post, setPost] = useState();
 
   // Đọc API
   const fetchApi = async () => {
@@ -18,41 +11,85 @@ function JsonPosts() {
   }
 
   // Thêm mới post
-  const fetchCreateApi = async () => {
-    const response = await axios.post(`http://localhost:3100/posts`, {
-      "title": "json-server",
-      "author": "typicode"
-    });
+  const fetchCreateApi = async (newPost) => {
+    const response = await axios.post(`http://localhost:3100/posts`, newPost);
     return response.data;
   }
 
   // Xóa post
-  const fetchDeleteApi = async () => {
+  const fetchDeleteApi = async (postId) => {
     const response = await axios.delete(`http://localhost:3100/posts/${postId}`);
     return response.data;
   }
 
   // Update post
-  const fetchUpdateApi = async () => {
+  const fetchUpdateApi = async (post) => {
     const response = await axios.put(`http://localhost:3100/posts/${post.id}`, post);
     return response.data;
   }
 
   // Queries
   const query = useQuery({ queryKey: ['posts'], queryFn: fetchApi});
-  const queryCreate = useQuery({ queryKey:['create-post'], queryFn: fetchCreateApi, enabled: isCreate });
-  const queryDelete = useQuery({ queryKey:['delete-post'], queryFn: fetchDeleteApi, enabled: isDelete });
-  const queryUpdate = useQuery({ queryKey:['update-post'], queryFn: fetchUpdateApi, enabled: isUpdate });
+  
+  // Muation Create
+  const muationCreate = useMutation({ 
+    mutationKey:['create-post'], 
+    mutationFn:(newPost) => fetchCreateApi(newPost), 
+    onError: () => {
+      console.log('error');
+    },
+    onSuccess: () => {
+      console.log('sucess');
+    },
+    onSettled: () => {
+      console.log('settled');
+      query.refetch();
+    }
+  });
+
+  // Muation Delete
+  const muationDelete = useMutation({ 
+    mutationKey:['delete-post'], 
+    mutationFn:(postId) => fetchDeleteApi(postId), 
+    onError: () => {
+      console.log('error');
+    },
+    onSuccess: () => {
+      console.log('sucess');
+    },
+    onSettled: () => {
+      console.log('settled');
+      query.refetch();
+    }
+  });
+
+  // Muation Delete
+  const muationUpdate = useMutation({ 
+    mutationKey:['update-post'], 
+    mutationFn:(post) => fetchUpdateApi(post), 
+    onError: () => {
+      console.log('error');
+    },
+    onSuccess: () => {
+      console.log('sucess');
+    },
+    onSettled: () => {
+      console.log('settled');
+      query.refetch();
+    }
+  });
 
   // Sự kiện Create
   const handleCreatePost = () => {
-    setIsCreate(true);
+    muationCreate.mutate({
+      "title": "json-server",
+      "author": "typicode"
+    });
   }
 
   // Sự kiện Xóa
-  const handleDeletePost = (id) => {
-    setIsDelete(true);
-    setPostId(id);
+  const handleDeletePost = (postId) => {
+    muationDelete.mutate(postId);
   }
 
   // Sự kiện Update
@@ -60,38 +97,13 @@ function JsonPosts() {
     const title = prompt('Nhập tiêu đề cần update');
     const author = prompt('Nhập tác giả cần update');
     if(title){
-      setIsUpdate(true);
-      setPost({
+      muationUpdate.mutate({
         id: id,
         title: title,
         author: author,
-      })
+      });
     }
   }
-
-  // Update trạng thái isCreate là false sau khi chay handleCreatePost
-  useEffect(() => {
-    if(isCreate){
-      setTimeout(() => {
-        setIsCreate(false);
-        query.refetch();
-      }, 1000);
-    }
-
-    if(isDelete){
-      setTimeout(() => {
-        setIsDelete(false);
-        query.refetch();
-      }, 1000);
-    }
-
-    if(isUpdate){
-      setTimeout(() => {
-        setIsUpdate(false);
-        query.refetch();
-      }, 1000);
-    }
-  }, [isCreate, isDelete, isUpdate]);
 
   if (query.isLoading) {
     return <h1>...Loading</h1>
@@ -124,7 +136,7 @@ function JsonPosts() {
           </span>
         </p>
       })}
-      <button onClick={handleCreatePost} disabled={!!isCreate}>Create post</button>
+      <button onClick={handleCreatePost}>Create post</button>
     </div>
   )
 }

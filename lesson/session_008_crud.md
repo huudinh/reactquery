@@ -183,7 +183,7 @@ function JsonPosts() {
             style={{ cursor: 'pointer', color:'blue' }}
             onClick={() => handleUpdatePost(post.id)}
           >
-            [Sửa]
+            [Edit]
           </span>
           &nbsp;
           <span 
@@ -206,5 +206,15 @@ export default JsonPosts;
 Trong đó
 
 `query.refetch();` sẽ làm mới lại dữ liệu khi thực hiện các sự kiện CRUD
+
+### Chạy ứng dụng
+
+Vào menu Json-server
+
+Click vào nút 'Create post' để thêm mới bài viết
+
+Click vào nút Delete để xóa bài viết
+
+Click vào nút Edit, Nhập nội dung cần sửa
 
 <!-- *Bài tiếp theo [CRUD API trong react query](session_008_crud.md)* -->

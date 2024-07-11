@@ -190,4 +190,4 @@ Click vào nút Edit, Nhập nội dung cần sửa
 Ta thấy việc sử dụng UseMutaion giúp code gọn gàng hơn, và đem lại trải nghiệm mượt mà hơn cho người sử dụng khi chọn các thao tác Thêm mới, Cập nhật, Xóa dữ liệu.
 
 
-<!-- *Bài tiếp theo [useMutation trong React Query](session_009_mutation.md)* -->
+*Bài tiếp theo [useQueryClient trong React Query](session_010_queryclient.md)*

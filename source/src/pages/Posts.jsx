@@ -3,6 +3,7 @@ import { useQuery } from '@tanstack/react-query';
 import Header from '../components/Header';
 
 function Posts() {
+  // Đọc API
   const fetchApi = async () => {
     const response = await axios.get('https://jsonplaceholder.typicode.com/posts')
     return response.data
@@ -12,8 +13,8 @@ function Posts() {
   const query = useQuery({ queryKey: ['posts'], queryFn: fetchApi, retry: 5, retryDelay: 1000 });
 
   const { isError, isLoading, data, isFetching } = query;
-  
-  console.log('check', {isLoading, isFetching});
+
+  console.log('check', { isLoading, isFetching });
 
   if (isLoading) {
     return <h1>...Loading</h1>

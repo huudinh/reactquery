@@ -20,4 +20,4 @@
 
 9. [Mutation trong React Query](lesson/session_009_mutation.md)
 
-10. [useQueryClient trong React Query](session_010_queryclient.md)
+10. [useQueryClient trong React Query](lesson/session_010_queryclient.md)

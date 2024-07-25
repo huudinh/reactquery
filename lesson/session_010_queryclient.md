@@ -28,7 +28,37 @@ const data = queryClient.getQueryData(queryKey);
 
 queryKey là một mảng chứa khóa của query bạn muốn lấy dữ liệu (ví dụ: ['todos'])
 
+### Sửa file Header.jsx
 
+```
+import { useIsFetching, useQueryClient } from "@tanstack/react-query";
+import { Link } from "react-router-dom";
+
+const Header = () => {
+    // Gọi QueryClient
+    const queryClient = useQueryClient();
+    // Lấy data
+    const data = queryClient.getQueriesData(['post']);
+    // Lấy trạng thái fetching
+    const isFetching = useIsFetching(['create-post'])
+    console.log(data);
+    console.log(isFetching);
+
+    return (
+        <div style={{ display:"flex", gap:10}}>
+            <Link to="/">Home</Link>
+            <Link to="/loadmore">Load More</Link>
+            <Link to="/page">Page</Link>
+            <Link to="/dependent">Dependent</Link>
+            <Link to="/json-server">Json-server</Link>
+            <Link to="/react-query">React query</Link>
+            <Link to="/react">React api</Link>
+        </div>
+    )
+}
+
+export default Header;
+```
 
 
 <!-- *Bài tiếp theo [useQueryClient trong React Query](session_010_queryclient.md)* -->
